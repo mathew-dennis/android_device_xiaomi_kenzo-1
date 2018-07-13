@@ -18,7 +18,7 @@
 
 $(call inherit-product, device/xiaomi/kenzo/full_kenzo.mk)
 
-# Inherit some common Cardinal-AOSP stuff.
+# Inherit some common ArrowOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 
 # Set those variables here to overwrite the inherited values.
