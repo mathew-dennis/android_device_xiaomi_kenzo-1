@@ -42,5 +42,19 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_LD_SHIM_LIBS += \
 	/system/vendor/lib64/lib-imsvt.so|libshims_ims.so
 
+
+#--------ut----------------------
+
+# To enable system image
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
+# Ramdisk
+#BOARD_ROOT_EXTRA_FOLDERS += firmware
+
+#kernel
+BOARD_KERNEL_CMDLINE += console=tty0
+
+
+#-------------------------------
 # inherit from the proprietary version
 -include vendor/xiaomi/kenzo/BoardConfigVendor.mk
